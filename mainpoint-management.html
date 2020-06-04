@@ -17,6 +17,7 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mainpoint-management.css">
 
 </head>
 
@@ -53,13 +54,13 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="user-management.html" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-user"></i>
           <span>Quản lý thành viên</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="collapseTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="user-management.html">Danh sánh thành viên</a>
+            <a class="collapse-item" href="buttons.html">Danh sánh thành viên</a>
             <a class="collapse-item" href="cards.html">Cards</a>
           </div>
         </div>
@@ -74,7 +75,7 @@
         <div id="collapseCourse" class="collapse" aria-labelledby="collapseCourse" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="course-management.html">Danh sách khóa học</a>
-            <a class="collapse-item" href="team-management.html">Team</a>
+            <a class="collapse-item" href="utilities-border.html">Team</a>
           </div>
         </div>
       </li>
@@ -88,9 +89,10 @@
         </a>
         <div id="collapseFormEvaluation" class="collapse" aria-labelledby="collapseFormEvaluation" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="utilities-color.html">Danh sách đánh giá</a>
-            <a class="collapse-item" href="utilities-border.html">Phân quyền đánh giá</a>
-            <a class="collapse-item" href="utilities-animation.html">Danh sách form</a>
+            <a class="collapse-item" href="utilities-color.html">Danh sách khóa học</a>
+            <a class="collapse-item" href="utilities-border.html">Team</a>
+            <a class="collapse-item" href="utilities-animation.html">Animations</a>
+            <a class="collapse-item" href="utilities-other.html">Other</a>
           </div>
         </div>
       </li>
@@ -104,7 +106,10 @@
         </a>
         <div id="collapseEvaluation" class="collapse" aria-labelledby="collapseEvaluation" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="evaluation-management.html">Danh sách đánh giá</a>
+            <a class="collapse-item" href="utilities-color.html">Danh sách khóa học</a>
+            <a class="collapse-item" href="utilities-border.html">Team</a>
+            <a class="collapse-item" href="utilities-animation.html">Animations</a>
+            <a class="collapse-item" href="utilities-other.html">Other</a>
           </div>
         </div>
       </li>
@@ -197,7 +202,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
                 <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3</span>
+                <span class="badge badge-danger badge-counter">3+</span>
               </a>
               <!-- Dropdown - Alerts -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
@@ -311,6 +316,10 @@
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Thông tin cá nhân
                 </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Cài đặt hệ thống
+                </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -328,8 +337,138 @@
         <div class="container-fluid">
 
          <!-- code ở đây nhé :)) -->
-         
-          
+         <h2 class="text-center mb-4">Quản lý mainpoint</h2>
+
+         <!-- btn add mainpoint -->
+         <div class="d-flex justify-content-end mb-5 ">
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#btnAdd">Thêm mới mainpoint</button>
+
+           <!-- Add new mainpoint form -->
+           <div class="modal fade" id="btnAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thêm mới Mainpoint</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row ">
+                      <label for="recipient-name" class=" col-sm-4 col-form-label">Tên mainpoint:</label>
+                      <input type="text" class="col-sm-8 form-control" id="recipient-name" placeholder="Mainpoint">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                  <button type="button" class="btn btn-primary">Lưu</button>
+                </div>
+              </div>
+            </div>
+          </div>   
+         </div>
+         <!-- Search mainpoint -->
+         <div class="input-group mb-5">
+          <input type="text" class="form-control my-0 py-1" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+              <i class="fas fa-search text-grey" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Mainpoint list -->
+        <table class="table table-hover mb-5" >
+          <thead >
+            <tr>
+              <th>STT</th>
+              <th>Tên mainpoint</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Competencies</td>
+              <td>
+                <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#btnUpdate">Sửa</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#btnRemove">Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>Maturity</td>
+              <td>
+                <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#btnUpdate">Sửa </button>
+                
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#btnRemove">Xóa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Pagination of mainpoint -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+
+        <!-- Modal edit -->
+        <div class="modal fade" id="btnUpdate" tabindex="-1" role="dialog" aria-labelledby="titleUpdate" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="titleUpdate">Thêm mới Mainpoint</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row ">
+                    <label for="recipient-name" class=" col-sm-4 col-form-label">Tên mainpoint:</label>
+                    <input type="text" class="col-sm-8 form-control" id="recipient-name" placeholder="Mainpoint">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Lưu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Model remove -->
+        <div class="modal fade" id="btnRemove" tabindex="-1" role="dialog" aria-labelledby="titleUpdate" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="titleUpdate">Xóa Mainpoint</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Bạn có chắc chắn xóa không ?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Xóa</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
 
