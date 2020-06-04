@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Quản lý user</title>
+  <title>Quản lý form</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,9 +17,13 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
-  <link href="css/user-management.css" rel="stylesheet">
+  <link href="css/form-management.css" rel="stylesheet">
 
-
+  <style>
+    .table .thead-dark th {
+      vertical-align: middle;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -337,18 +341,18 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
           
-          <h2 class="text-center mb-4 sticky-top">Quản lý user</h2>
+          <h2 class="text-center mb-4 sticky-top">Danh sách form</h2>
           
           <!-- add new user button -->
           <div class="d-flex justify-content-end align-items-center mb-5">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-form">Thêm mới user</button>
-            <!-- Add new user form -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-form">Thêm mới Form</button>
+            <!-- Add new form template-->
             <div class="modal fade bd-example-modal-lg" id="user-form" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Thêm mới user</h5>
+                  <h5 class="modal-title" id="exampleModalLongTitle">Thêm mới Form</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -358,85 +362,164 @@
                     <!-- Điền thông tin cá nhân của user  -->
                     <form>
                       <div class="form-group row">
-                        <label for="avatar" class="col-sm-2 col-form-label small">Avatar</label>
-                        <div class="col-sm-10">
-                          <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60"
-                            alt="avatar" width="50px">
-                            <div class="form-group">
-                              <label for="exampleFormControlFile1">Tải lên</label>
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                            </div>
+                        <div class="col-sm-12 d-flex justify-content-lg-end">
+                          <button type="button" class="btn btn-success">Xem mẫu</button>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="name" class="col-sm-2 col-form-label">Họ và tên</label>
+                        <label for="name" class="col-sm-2 col-form-label">Tiêu đề</label>
                         <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="name" value="Nguyễn Duy Thế">
+                          <input type="text"  class="form-control" id="name" placeholder="Nhập tiêu đề của form ...">
                         </div>
                       </div>
       
                       <div class="form-group row">
-                        <label for="email" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="email" value="Thend@hybird-technologies">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="password" class="col-sm-2 col-form-label">Mật khẩu</label>
-                        <div class="col-sm-10">
-                          <input type="password"  class="form-control" id="username"
-                            value="Thend@hybird-technologies" disabled>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="address" class="col-sm-2 col-form-label">Địa chỉ</label>
-                        <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="address" value="Nam Từ Liêm - Hà Nội">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="address" class="col-sm-2 col-form-label">Ngày sinh</label>
-                        <div class="col-sm-10">
-                          <input type="date"  class="form-control" id="address" value="22/12/1998">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="numberPhone" class="col-sm-2 col-form-label">Số điện thoại</label>
-                        <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="numberPhone" value="0907916262">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="numberPhone" class="col-sm-2 col-form-label">Khóa học</label>
+                        <label for="numberPhone" class="col-sm-2 col-form-label">Main point</label>
                         <div class="col-sm-10">
                           <select class="custom-select" id="validationTooltip04" required>
                             <option selected disabled value="">Choose...</option>
-                            <option>Double 20</option>
+                            <option>Maint point 1</option>
                             <option>somthing else ...</option>
                           </select>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="numberPhone" class="col-sm-2 col-form-label">Team</label>
+                        <label for="numberPhone" class="col-sm-2 col-form-label">Categories</label>
                         <div class="col-sm-10">
                           <select class="custom-select" id="validationTooltip04" required>
                             <option selected disabled value="">Choose...</option>
-                            <option>FrontEnd</option>
-                            <option>BackEnd</option>
-                            <option>Tester</option>
+                            <option>Categoreis - mainpoint1  1</option>
+                            <option>Categoreis - mainpoint1 2</option>
                           </select>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <label for="numberPhone" class="col-sm-2 col-form-label">Vị trí</label>
-                        <div class="col-sm-10">
-                          <select class="custom-select" id="validationTooltip04" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>Fresher</option>
-                            <option>Mentor</option>
-                            <option>Sub Admin</option>
-                          </select>
+                      <div class="form-group row mt-4">
+                        <div class="col-12">
+                          <div class="form-template-content">
+                            <p class="h4 col-sm-12 mb-4 text-center">Maint point 1</p>
+                            <!-- category block -->
+                            <div class="categories-block mb-4">
+                              <p class="h5 mb-2">Categories 1</p>
+                              <!-- table point -->
+                              <table class="table">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Chọn</th>
+                                    <th scope="col">Tiêu chí</th>
+                                    <th scope="col">Điểm</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Tổng điểm</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>20</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                             <!-- category block -->
+                             <div class="categories-block mb-4">
+                              <p class="h5 mb-2">Categories 2</p>
+                              <!-- table point -->
+                              <table class="table">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Chọn</th>
+                                    <th scope="col">Tiêu chí</th>
+                                    <th scope="col">Điểm</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                    <td>tiêu chí 1</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Tổng điểm</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>20</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                             <!-- category block -->
+                             
+                          </div>
                         </div>
+                        
                       </div>
                     </form>
                 </div>
@@ -449,7 +532,7 @@
             </div>
 
           </div>
-          <!-- Search user -->
+          <!-- Search Form -->
           <div class="input-group md-form form-sm form-2 pl-0 mb-5">
             <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
             <div class="input-group-append">
@@ -457,25 +540,25 @@
                   aria-hidden="true"></i></span>
             </div>
           </div>
-          <!-- User list -->
-          <table class="table table-hover mb-5">
+          <!-- Form list -->
+          <table class="table table-hover mb-5 text-center">
             <thead>
               <tr>
                 <th scope="col">STT</th>
-                <th scope="col">Họ và Tên</th>
-                <th scope="col">Team</th>
-                <th scope="col">Khóa Học</th>
-                <th scope="col">Trạng thái user</th>
+                <th scope="col">Tiêu đề form</th>
+                <th scope="col">Ngày tạo</th>
+                <th scope="col">Ngày sử dụng</th>
+                <th scope="col">Trạng thái</th>
                 <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>FrontEnd</td>
-                <td>Double 20</td>
-                <td>Active</td>
+                <td>Đánh giá Front-End giữa khóa</td>
+                <td>20/5/2020</td>
+                <td>1/6/2020</td>
+                <td>Assigne</td>
                 <td>
                   <button type="button" class="btn btn-dark mr-1" data-toggle="modal" data-target="#userId-1">
                     <i class="far fa-eye"></i>
@@ -486,71 +569,43 @@
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>FrontEnd</td>
-                <td>Double 20</td>
-                <td>Active</td>
+                <td>Đánh giá Back-End giữa khóa</td>
+                <td>20/5/2020</td>
+                <td>1/6/2020</td>
+                <td>Assigne</td>
                 <td>
                   <button type="button" class="btn btn-dark mr-1" data-toggle="modal" data-target="#userId-1">
                     <i class="far fa-eye"></i>
                   </button>
-                  <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#user-form">Sửa </button>
+                  <button type="button" class="btn btn-primary mr-1 " data-toggle="modal" data-target="#user-form" >Sửa </button>
                   <button type="button" class="btn btn-danger">Xóa</button>
                 </td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td>Larry the Bird</td>
-                <td>FrontEnd</td>
-                <td>Double 20</td>
-                <td>Active</td>
+                <td>Đánh giá Tester giữa khóa</td>
+                <td>20/5/2020</td>
+                <td>1/6/2020</td>
+                <td>Assigne</td>
                 <td>
-                  <button type="button" class="btn btn-dark mr-1" data-toggle="modal" data-target="#userId-1" >
+                  <button type="button" class="btn btn-dark mr-1" data-toggle="modal" data-target="#userId-1">
                     <i class="far fa-eye"></i>
                   </button>
-                  <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#user-form">Sửa </button>
+                  <button type="button" class="btn btn-primary mr-1 " data-toggle="modal" data-target="#user-form" >Sửa </button>
                   <button type="button" class="btn btn-danger">Xóa</button>
                 </td>
               </tr>
               <tr>
-                <th scope="row">4</th>
-                <td>Mark</td>
-                <td>FrontEnd</td>
-                <td>Double 20</td>
-                <td>Active</td>
+                <th scope="row">1</th>
+                <td>Đánh giá Toàn khóa </td>
+                <td>20/5/2020</td>
+                <td>1/7/2020</td>
+                <td>Assigne</td>
                 <td>
-                  <button type="button" class="btn btn-dark mr-1">
+                  <button type="button" class="btn btn-dark mr-1" data-toggle="modal" data-target="#userId-1">
                     <i class="far fa-eye"></i>
                   </button>
-                  <button type="button" class="btn btn-primary mr-1 " data-toggle="modal" data-target="#user-form">Sửa </button>
-                  <button type="button" class="btn btn-danger">Xóa</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Jacob</td>
-                <td>FrontEnd</td>
-                <td>Double 20</td>
-                <td>Active</td>
-                <td>
-                  <button type="button" class="btn btn-dark mr-1">
-                    <i class="far fa-eye"></i>
-                  </button>
-                  <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#user-form">Sửa </button>
-                  <button type="button" class="btn btn-danger">Xóa</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>Larry the Bird</td>
-                <td>FrontEnd</td>
-                <td>Double 20</td>
-                <td>Active</td>
-                <td>
-                  <button type="button" class="btn btn-dark mr-1">
-                    <i class="far fa-eye"></i>
-                  </button>
-                  <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#user-form">Sửa </button>
+                  <button type="button" class="btn btn-primary mr-1 " data-toggle="modal" data-target="#user-form" >Sửa </button>
                   <button type="button" class="btn btn-danger">Xóa</button>
                 </td>
               </tr>
@@ -570,96 +625,279 @@
               </li>
             </ul>
           </nav>
-          <!-- profile of user -->
-          <!-- Modal of profile user -->
+
+          <!-- Modal of form -->
           <div class="modal fade" id="userId-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-info-custom" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-form-preview-custom" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Thông tin cá nhân </h5>
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Bản xem trước  </h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                   <div class="row">
-                    <div class="col-4">
-                      <div class="card" style="width:100%;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXT-MvunybNC8rfKP3k9axIiv4G8HRZIskEF5RZIRilJCvHnP-&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                          <h5 class="card-title text-center">Nguyen Van A</h5>
-                          <p class="card-text text-center">
-                            <small class="text-muted">Fresher</small>
-                            <small class="text-muted"> - </small>
-                            <small class="text-muted">FrontEnd</small>
-                            <small class="text-muted"> - </small>
-                            <small class="text-muted">Double 20</small>
-                          </p>
-                          <p class="card-text">
-                            <small class="text-muted">Create Date</small>
-                            <strong>11/05/2020</strong>
-                          </p>
-                        </div>
-                      </div>
+                    <u class="col-12 d-flex justify-content-center mb-4">
+                      <p class="h4 text-center">Đánh giá nhân viên 360</p>
+                    </u>
+                    <div class="col-12">
+                      <table class="table " style="width:30%">
+                        <tbody>
+                          <tr>
+                            <th scope="col">Họ tên</th>
+                            <td>Le Van A</td>
+                          </tr>
+                          <tr>
+                            <th scope="col">Ngày tham gia</th>
+                            <td>11/5/2020</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12">
                       <div class="row">
-                        <div class="col-12">
-                          <div class="d-flex justify-content-end mb-4">
-                            <button type="button" class="btn btn-primary">Sửa <i class="far fa-edit ml-2 d-inline-block"></i></button>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="user-info">
-                            <!-- user info title -->
-                            <p class="h5 ">Thông tin cơ bản</p>
-                            <!-- user info description -->
-                            <table class="table table-borderless">
-                              <tbody>
-                                <tr>
-                                  <th scope="col">Họ tên</th>
-                                  <td>Le Van A</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">Ngày sinh</th>
-                                  <td>09/10/1996</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">Số điện thoại</th>
-                                  <td>09685462157</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">Địa chỉ</th>
-                                  <td>Adresss</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">Email</th>
-                                  <td>vana@hybird-technologies.com</td>
-                                </tr>
-                                <tr>
-                                  <th scope="col">Social</th>
-                                  <td>link facebook</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <p class="h5 ">Thông tin Đánh giá</p>
-                          <table class="table table-borderless">
-                            <tbody>
-                              <tr>
-                                <th scope="col">Lần đánh giá 1</th>
-                                <td>Đường link form đánh giá</td>
-                              </tr>
-                              <tr>
-                                <th scope="col">Lần đánh giá 2</th>
-                                <td>Đường link form đánh giá</td>
-                              </tr>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                        <table class="table table-bordered text-center">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col" style="width:15%"> Chuyên mục</th>
+                              <th scope="col" style="width:30%">Tiêu chí</th>
+                              <th scope="col" style="width:7.5%">Điểm</th>
+                              <th scope="col" colspan="2" style="width:15%">Bản thân đánh giá</th>
+                              <th scope="col" colspan="2" style="width:15%">Team đánh giá</th>
+                              <th scope="col" colspan="2" style="width:15%">Mentor đánh giá</th>
+                              <th scope="col" colspan="2" style="width:15%">Admin đánh giá</th>
+                            </tr>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col"></th>
+                              <th scope="col"></th>
+                              <th scope="col"></th>
+                              <th scope="col" style="width:5%">Điểm</th>
+                              <th scope="col" style="width:5%">Tổng điểm</th>
+                              <th scope="col" style="width:5%">Điểm</th>
+                              <th scope="col" style="width:5%">Tổng điểm</th>
+                              <th scope="col" style="width:5%">Điểm</th>
+                              <th scope="col" style="width:5%">Tổng điểm</th>
+                              <th scope="col" style="width:5%">Điểm</th>
+                              <th scope="col" style="width:5%">Tổng điểm</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <th>Competencies・コンピテンシー</th>
+                              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <th>JOB SKILLS AND ABILITY</th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th></th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th></th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th>QUALITY</th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th></th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+
+                            <!-- break -->
+
+                            <tr>
+                              <th scope="row">1</th>
+                              <th>Competencies・コンピテンシー</th>
+                              <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <th>JOB SKILLS AND ABILITY</th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th></th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th></th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th>QUALITY</th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <!-- tieu chi -->
+                            <tr>
+                              <th scope="row">2</th>
+                              <th></th>
+                              <td>Khả năng phân tích</td>
+                              <!-- weight point  -->
+                              <td>5</td>
+                              <!-- self point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- team  point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- mentor point  -->
+                              <td></td>
+                              <td></td>
+                               <!-- admin point  -->
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
