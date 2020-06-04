@@ -9,14 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Thông tin cá nhân</title>
+  <title>Quản lý team</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/team-management.css">
 
 </head>
 
@@ -40,7 +43,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link " href="index.html" >
+        <a class="nav-link " href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -49,11 +52,12 @@
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      
+
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
           <i class="fas fa-fw fa-user"></i>
           <span>Quản lý thành viên</span>
         </a>
@@ -67,14 +71,15 @@
       <hr class="sidebar-divider">
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCourse" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCourse" aria-expanded="true"
+          aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-graduation-cap"></i>
           <span>Quản lý khóa học</span>
         </a>
         <div id="collapseCourse" class="collapse" aria-labelledby="collapseCourse" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="course-management.html">Danh sách khóa học</a>
-            <a class="collapse-item" href="team-management.html">Team</a>
+            <a class="collapse-item" href="utilities-color.html">Danh sách khóa học</a>
+            <a class="collapse-item" href="utilities-border.html">Team</a>
           </div>
         </div>
       </li>
@@ -82,11 +87,13 @@
       <hr class="sidebar-divider">
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFormEvaluation" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFormEvaluation"
+          aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-book-open"></i>
           <span>Quản lý mẫu đánh giá</span>
         </a>
-        <div id="collapseFormEvaluation" class="collapse" aria-labelledby="collapseFormEvaluation" data-parent="#accordionSidebar">
+        <div id="collapseFormEvaluation" class="collapse" aria-labelledby="collapseFormEvaluation"
+          data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="utilities-color.html">Danh sách khóa học</a>
             <a class="collapse-item" href="utilities-border.html">Team</a>
@@ -99,11 +106,13 @@
       <hr class="sidebar-divider">
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEvaluation" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEvaluation"
+          aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-list"></i>
           <span>Quản lý đánh giá</span>
         </a>
-        <div id="collapseEvaluation" class="collapse" aria-labelledby="collapseEvaluation" data-parent="#accordionSidebar">
+        <div id="collapseEvaluation" class="collapse" aria-labelledby="collapseEvaluation"
+          data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="utilities-color.html">Danh sách khóa học</a>
             <a class="collapse-item" href="utilities-border.html">Team</a>
@@ -116,7 +125,8 @@
       <hr class="sidebar-divider">
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCriteria" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCriteria"
+          aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
           <span>Quản lý tiêu chí</span>
         </a>
@@ -130,11 +140,11 @@
       </li>
 
       <!-- Heading -->
-     
 
 
-  
-      
+
+
+
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -164,7 +174,8 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -178,14 +189,17 @@
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
               <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
                   <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                       <button class="btn btn-primary" type="button">
                         <i class="fas fa-search fa-sm"></i>
@@ -198,13 +212,15 @@
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
                 <!-- Counter - Alerts -->
                 <span class="badge badge-danger badge-counter">3+</span>
               </a>
               <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
                   Alerts Center
                 </h6>
@@ -247,13 +263,15 @@
 
             <!-- Nav Item - Messages -->
             <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope fa-fw"></i>
                 <!-- Counter - Messages -->
                 <span class="badge badge-danger badge-counter">7</span>
               </a>
               <!-- Dropdown - Messages -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
                 <h6 class="dropdown-header">
                   Message Center
                 </h6>
@@ -263,7 +281,8 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been
+                      having.</div>
                     <div class="small text-gray-500">Emily Fowler · 58m</div>
                   </div>
                 </a>
@@ -273,7 +292,8 @@
                     <div class="status-indicator"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them
+                      sent to you?</div>
                     <div class="small text-gray-500">Jae Chun · 1d</div>
                   </div>
                 </a>
@@ -283,7 +303,8 @@
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so
+                      far, keep up the good work!</div>
                     <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                   </div>
                 </a>
@@ -293,7 +314,8 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people
+                      say this to all dogs, even if they aren't good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
                   </div>
                 </a>
@@ -305,7 +327,8 @@
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nguyễn Duy Thế</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
@@ -334,13 +357,198 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+          <div class="col-12">
+            <h3 class="text-center">Quản lý team</h3>
+          </div>
+          <!-- code ở đây nhé :)) -->
+          <div class="row">
 
-         <!-- code ở đây nhé :)) -->
-         
-          
+            <div class="col-12">
+              <div class="input-group" style="margin:2rem 0rem 2rem 0rem">
+                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12">
+              <div class="btn-add float-right" style="margin-bottom: 2rem;">
+                <button class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModalCenter">Thêm mới</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Tên </th>
+                  <th scope="col">Khóa học</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Front-End</td>
+                  <td>Khóa học 1</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#courseDetail"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary mr-1" data-toggle="modal" data-target="#exampleModalCenter">Sửa</button>
+                    <button class="btn btn-danger mr-1"  >Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Back-end</td>
+                  <td>Khóa học 2</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#courseDetail"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary mr-1" data-toggle="modal" data-target="#exampleModalCenter">Sửa</button>
+                    <button class="btn btn-danger mr-1">Xóa</button>
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Tester</td>
+                  <td>Khóa học 3</td>
+                  <td>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#courseDetail"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-primary mr-1" data-toggle="modal" data-target="#exampleModalCenter">Sửa</button>
+                    <button class="btn btn-danger mr-1">Xóa</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="paging ">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
+        <!-- modal them moi -->
+        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Thêm mới team</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <label for="teamCourse" class="col-sm-2 col-form-label">Tên team</label>
+                    <div class="col-sm-10">
+                      <input type="text"  class="form-control" id="teamCourse" value="">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="startDate" class="col-sm-2 col-form-label">Ngày bắt đầu</label>
+                    <div class="col-sm-10">
+                      <select class="form-control">
+                        <option>HAN Fresher 2020</option>
+                        <option>HAN Fresher 2021</option>
+                        <option>HAN Fresher 2022</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Lưu</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- modal xem chi tiet -->
+        <div class="modal fade bd-example-modal-lg" id="courseDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Xem chi tiết</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <label for="nameTeam" class="col-sm-2 col-form-label">Tên team</label>
+                    <div class="col-sm-10">
+                      <p class="nameTeam">Front-end</p>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="nameCourse" class="col-sm-2 col-form-label">Mô tả</label>
+                    <div class="col-sm-10">
+                      <p class="nameCourse">HAN Fresher 2020</p>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Thành viên</label>
+                    <div class="col-sm-10">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Team</th>
+                            <th scope="col">Thành viên</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Front-end</td>
+                            <td><div class="list-group">
+                              <ul class="list-group">
+                                <li class="list-group-item">Nguyễn Duy Thế</li>
+                                <li class="list-group-item">Lê Xuân Tùng</li>
+                                <li class="list-group-item">Nguyễn Ngọc Quý</li>
+                                <li class="list-group-item">Võ Công Đức</li>
+                              </ul></td>
+                            
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                      
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- End of Main Content -->
 
@@ -366,7 +574,8 @@
   </a>
 
   <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
