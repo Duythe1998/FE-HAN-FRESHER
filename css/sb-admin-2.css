@@ -10232,7 +10232,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .sidebar {
-    width: 18rem !important;
+    width: 15rem !important;
   }
   .sidebar .nav-item .collapse {
     position: relative;
@@ -11016,4 +11016,7 @@ body.sidebar-toggled footer.sticky-footer {
 .navbar-nav-custom{
   position: sticky;
   top:0
+}
+.dashboard-center {
+  text-align: center !important;
 }
