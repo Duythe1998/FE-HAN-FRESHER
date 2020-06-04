@@ -9,17 +9,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Hybrid Technologies</title>
+  <title>Thông tin cá nhân</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/mainpoint-management.css">
+
 </head>
 
 <body id="page-top">
@@ -325,145 +324,224 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <h5 style="color: #000000;" class="font-weight-bold">Thông tin cá nhân</h5>
-            </div>
+         <!-- code ở đây nhé :)) -->
+         <h2 class="text-center mb-4">Quản lý tiêu chí</h2>
+
+         <!-- btn add Criteria -->
+         <div class="d-flex justify-content-end mb-5 ">
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#btnAdd">Thêm mới tiêu chí</button>
+
+              
+         </div>
+         <!-- Search Criteria -->
+         <div class="input-group mb-5">
+          <input type="text" class="form-control my-0 py-1" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+              <i class="fas fa-search text-grey" aria-hidden="true"></i>
+            </button>
           </div>
-          <hr>
-          <div class="row">
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-              <div class=" float-right">
-                <button type="button" class="btn btn-primary btn-action" data-toggle="modal" data-target="#exampleModalCenter">Sửa</button>
+        </div>
+        <!-- Criteria list -->
+        <table class="table table-hover mb-5" >
+          <thead >
+            <tr>
+              <th>STT</th>
+              <th>Tên tiêu chí</th>
+              <th>Tên danh mục</th>
+              <th>Tên mainpoint</th>
+              <th>Trọng số</th>
+              <th>Độ ưu tiên</th>
+              <th>Miêu tả</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Job Understanding</td>
+              <td>Job skill and ability</td>
+              <td>Competencies</td>
+              <td>10</td>
+              <td>7</td>
+              <td></td>
+              <td>
+                <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#btnUpdate">Sửa</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#btnRemove">Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>Job Knowledge and Skills</td>
+              <td>Job skill and ability</td>
+              <td>Competencies</td>
+              <td>10</td>
+              <td>7</td>
+              <td></td>
+              <td>
+                <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#btnUpdate">Sửa</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#btnRemove">Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>Analytical Ability</td>
+              <td>Job skill and ability</td>
+              <td>Competencies</td>
+              <td>10</td>
+              <td>7</td>
+              <td></td>
+              <td>
+                <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#btnUpdate">Sửa</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#btnRemove">Xóa</button>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+
+        <!-- Pagination of Criteria -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+        <!-- Add new Criteria form -->
+        <div class="modal fade" id="btnAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm mới tiêu chí</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row ">
+                    <label for="mainpoint-name" class=" col-sm-4 col-form-label">Tên Mainpoint:</label>
+                    <select class="custom-select col-sm-8" id="mainpoint-name">
+                      <option selected>Chọn ...</option>
+                      <option value="1">Maturity</option>
+                      <option value="2">Competencies</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group row ">
+                    <label for="category-name" class=" col-sm-4 col-form-label">Tên danh mục:</label>
+                    <select class="custom-select col-sm-8" id="category-name">
+                      <option selected>Chọn ...</option>
+                      <option value="1">Maturity</option>
+                      <option value="2">Competencies</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group row ">
+                    <label for="Criteria-name" class=" col-sm-4 col-form-label">Tên tiêu chí:</label>
+                    <input type="text" class="col-sm-8 form-control" id="Criteria-name" placeholder="Tên tiêu chí">
+                  </div>
+                  <div class="form-group row ">
+                    <label for="weight" class=" col-sm-4 col-form-label">Trọng số</label>
+                    <input type="text" class="col-sm-8 form-control" id="weight" placeholder="10">
+                  </div>
+                  <div class="form-group row ">
+                    <label for="priority" class=" col-sm-4 col-form-label">Độ ưu tiên:</label>
+                    <input type="text" class="col-sm-8 form-control" id="priority" placeholder="Độ ưu tiên">
+                  </div>
+                  <div class="form-group row ">
+                    <label for="Criteria-name" class=" col-sm-4 col-form-label">Miêu tả:</label>
+                    <textarea class=" col-sm-8 form-control" name="" id="" rows="3"></textarea> 
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Lưu</button>
               </div>
             </div>
           </div>
-
-          <!-- Modal -->
-          <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Cập nhật thông tin cá nhân</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  
-                    <!-- form-cap-nhat-thong-tin-ca-nhan -->
-                    <form>
-                      <div class="form-group row">
-                        <label for="avatar" class="col-sm-2 col-form-label small">Avatar</label>
-                        <div class="col-sm-10">
-                          <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60"
-                            alt="avatar" width="50px">
-                            <div class="form-group">
-                              <label for="exampleFormControlFile1">Tải lên</label>
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                            </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="name" class="col-sm-2 col-form-label">Họ và tên</label>
-                        <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="name" value="Nguyễn Duy Thế">
-                        </div>
-                      </div>
-      
-                      <div class="form-group row">
-                        <label for="email" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="email" value="Thend@hybird-technologies">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="password" class="col-sm-2 col-form-label">Mật khẩu</label>
-                        <div class="col-sm-10">
-                          <input type="password"  class="form-control" id="username"
-                            value="Thend@hybird-technologies">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="address" class="col-sm-2 col-form-label">Địa chỉ</label>
-                        <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="address" value="Nam Từ Liêm - Hà Nội">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="address" class="col-sm-2 col-form-label">Ngày sinh</label>
-                        <div class="col-sm-10">
-                          <input type="date"  class="form-control" id="address" value="22/12/1998">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="numberPhone" class="col-sm-2 col-form-label">Số điện thoại</label>
-                        <div class="col-sm-10">
-                          <input type="text"  class="form-control" id="numberPhone" value="0907916262">
-                        </div>
-                      </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary btn-action" data-dismiss="modal">Đóng</button>
-                  <button type="button" class="btn btn-primary btn-action">Lưu</button>
-                </div>
+        </div>
+        <!-- Modal edit -->
+        <div class="modal fade" id="btnUpdate" tabindex="-1" role="dialog" aria-labelledby="titleUpdate" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="titleUpdate">Sửa tiêu chí</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row ">
+                    <label for="mainpoint-name" class=" col-sm-4 col-form-label">Tên Mainpoint:</label>
+                    <select class="custom-select col-sm-8" id="mainpoint-name">
+                      <option selected>Chọn ...</option>
+                      <option value="1">Maturity</option>
+                      <option value="2">Competencies</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group row ">
+                    <label for="category-name" class=" col-sm-4 col-form-label">Tên danh mục:</label>
+                    <select class="custom-select col-sm-8" id="category-name">
+                      <option selected>Chọn ...</option>
+                      <option value="1">Maturity</option>
+                      <option value="2">Competencies</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group row ">
+                    <label for="Criteria-name" class=" col-sm-4 col-form-label">Tên tiêu chí:</label>
+                    <input type="text" class="col-sm-8 form-control" id="Criteria-name" placeholder="Tên tiêu chí">
+                  </div>
+                  <div class="form-group row ">
+                    <label for="weight" class=" col-sm-4 col-form-label">Trọng số</label>
+                    <input type="text" class="col-sm-8 form-control" id="weight" placeholder="10">
+                  </div>
+                  <div class="form-group row ">
+                    <label for="priority" class=" col-sm-4 col-form-label">Độ ưu tiên:</label>
+                    <input type="text" class="col-sm-8 form-control" id="priority" placeholder="Độ ưu tiên">
+                  </div>
+                  <div class="form-group row ">
+                    <label for="Criteria-name" class=" col-sm-4 col-form-label">Miêu tả:</label>
+                    <textarea class=" col-sm-8 form-control" name="" id="" rows="3"></textarea> 
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Lưu</button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <form>
-                <div class="form-group row">
-                  <label for="avatar" class="col-sm-2 col-form-label small">Avatar</label>
-                  <div class="col-sm-8">
-                    <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60"
-                      alt="avatar" width="40px">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="name" class="col-sm-2 col-form-label">Họ và tên</label>
-                  <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="name" value="Nguyễn Duy Thế">
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <label for="email" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="email" value="Thend@hybird-technologies">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="password" class="col-sm-2 col-form-label">Mật khẩu</label>
-                  <div class="col-sm-8">
-                    <input type="password" readonly class="form-control" id="username"
-                      value="Thend@hybird-technologies">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="address" class="col-sm-2 col-form-label">Địa chỉ</label>
-                  <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="address" value="Nam Từ Liêm - Hà Nội">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="address" class="col-sm-2 col-form-label">Ngày sinh</label>
-                  <div class="col-sm-8">
-                    <input type="date" readonly class="form-control" id="address" value="22/12/1998">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="numberPhone" class="col-sm-2 col-form-label">Số điện thoại</label>
-                  <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="numberPhone" value="0907916262">
-                  </div>
-                </div>
-              </form>
-              <div class="text-center">
-                <button type="button" class="btn btn-danger">Quay lại</button>
+        <!-- Model remove -->
+        <div class="modal fade" id="btnRemove" tabindex="-1" role="dialog" aria-labelledby="titleUpdate" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="titleUpdate">Xóa tiêu chí</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Bạn có chắc chắn xóa không ?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Xóa</button>
               </div>
             </div>
           </div>
@@ -495,8 +573,7 @@
   </a>
 
   <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
