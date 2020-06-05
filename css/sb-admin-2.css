@@ -11035,3 +11035,9 @@ body.sidebar-toggled footer.sticky-footer {
 .dashboard-center {
   text-align: center !important;
 }
+.overtext{
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
