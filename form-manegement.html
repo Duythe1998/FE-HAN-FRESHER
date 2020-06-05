@@ -319,8 +319,8 @@
         <div class="container-fluid">
           
           <div class="head-action row mb-5">
-            <div class="col-2">
-              <h4 class="">Quản lý user</h2>
+            <div class="col-3">
+              <h4 class="">Quản lý biểu mẫu đánh giá</h2>
             </div>
            <div class="col-4">
               <!-- Search user -->
@@ -332,10 +332,10 @@
                 </div>
               </div>
            </div>
-           <div class="col-6">
+           <div class="col-5">
               <!-- add new user button -->
               <div class="d-flex justify-content-end align-items-center ">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-form">Thêm mới user</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-form">Thêm mới mẫu đánh giá </button>
                 <!-- Add new user form -->
 
               </div>
@@ -532,7 +532,7 @@
             <thead>
               <tr>
                 <th scope="col">STT</th>
-                <th scope="col">Tiêu đề form</th>
+                <th class="text-left" scope="col">Tiêu đề form</th>
                 <th scope="col">Ngày tạo</th>
                 <th scope="col">Ngày sử dụng</th>
                 <th scope="col">Trạng thái</th>
@@ -542,7 +542,7 @@
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Đánh giá Front-End giữa khóa</td>
+                <td class="text-left overtext" >Đánh giá Front-End giữa khóa</td>
                 <td>20/5/2020</td>
                 <td>1/6/2020</td>
                 <td>Assigne</td>
@@ -556,7 +556,7 @@
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td>Đánh giá Back-End giữa khóa</td>
+                <td class="text-left overtext" >Đánh giá Back-End giữa khóa</td>
                 <td>20/5/2020</td>
                 <td>1/6/2020</td>
                 <td>Assigne</td>
@@ -570,7 +570,7 @@
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td>Đánh giá Tester giữa khóa</td>
+                <td class="text-left overtext">Đánh giá Tester giữa khóa</td>
                 <td>20/5/2020</td>
                 <td>1/6/2020</td>
                 <td>Assigne</td>
@@ -584,7 +584,7 @@
               </tr>
               <tr>
                 <th scope="row">1</th>
-                <td>Đánh giá Toàn khóa </td>
+                <td class="text-left overtext">Đánh giá Toàn khóa </td>
                 <td>20/5/2020</td>
                 <td>1/7/2020</td>
                 <td>Assigne</td>
@@ -600,15 +600,19 @@
           </table>
           <!-- Pagination of user list -->
           <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
+            <ul class="pagination justify-content-end">
               <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
               </li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
               <li class="page-item"><a class="page-link" href="#">2</a></li>
               <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item">
-                <a class="page-link" href="#">Next</a>
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
               </li>
             </ul>
           </nav>

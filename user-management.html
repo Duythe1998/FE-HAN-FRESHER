@@ -446,11 +446,11 @@
           </div>
           <!-- User list -->
           <div class="table-responsive-sm table-responsive-md table-small-custom ">
-            <table class="table table-hover mb-5">
+            <table class="table table-hover mb-5 text-center">
               <thead>
                 <tr>
                   <th scope="col">STT</th>
-                  <th scope="col">Họ và Tên</th>
+                  <th class="text-left" scope="col">Họ và Tên</th>
                   <th scope="col">Team</th>
                   <th scope="col">Khóa Học</th>
                   <th scope="col">Trạng thái user</th>
@@ -460,8 +460,8 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>FrontEnd</td>
+                  <td class="text-left">Mark</td>
+                  <td >FrontEnd</td>
                   <td>Double 20</td>
                   <td>Active</td>
                   <td>
@@ -474,7 +474,7 @@
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Jacob</td>
+                  <td class="text-left">Jacob</td>
                   <td>FrontEnd</td>
                   <td>Double 20</td>
                   <td>Active</td>
@@ -488,7 +488,7 @@
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Larry the Bird</td>
+                  <td class="text-left">Larry the Bird</td>
                   <td>FrontEnd</td>
                   <td>Double 20</td>
                   <td>Active</td>
@@ -502,7 +502,7 @@
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>Mark</td>
+                  <td class="text-left">Mark</td>
                   <td>FrontEnd</td>
                   <td>Double 20</td>
                   <td>Active</td>
@@ -516,7 +516,7 @@
                 </tr>
                 <tr>
                   <th scope="row">5</th>
-                  <td>Jacob</td>
+                  <td class="text-left">Jacob</td>
                   <td>FrontEnd</td>
                   <td>Double 20</td>
                   <td>Active</td>
@@ -530,7 +530,7 @@
                 </tr>
                 <tr>
                   <th scope="row">6</th>
-                  <td>Larry the Bird</td>
+                  <td class="text-left">Larry the Bird</td>
                   <td>FrontEnd</td>
                   <td>Double 20</td>
                   <td>Active</td>
@@ -542,13 +542,42 @@
                     <button type="button" class="btn btn-danger">Xóa</button>
                   </td>
                 </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td class="text-left">Larry the Bird</td>
+                  <td>FrontEnd</td>
+                  <td>Double 20</td>
+                  <td>Active</td>
+                  <td>
+                    <button type="button" class="btn btn-dark mr-1">
+                      <i class="far fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#user-form">Sửa </button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td class="text-left">Larry the Bird</td>
+                  <td>FrontEnd</td>
+                  <td>Double 20</td>
+                  <td>Active</td>
+                  <td>
+                    <button type="button" class="btn btn-dark mr-1">
+                      <i class="far fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target="#user-form">Sửa </button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                  </td>
+                </tr>
+                
               </tbody>
             </table>
           </div>
          
           <!-- Pagination of user list -->
           <nav aria-label="Page navigation example">
-            <ul class="pagination">
+            <ul class="pagination justify-content-end">
               <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
