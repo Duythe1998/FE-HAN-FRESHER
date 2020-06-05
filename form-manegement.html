@@ -35,11 +35,10 @@
     <div class="wrap-sidebar bg-gradient-primary">
       <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion navbar-nav-custom" id="accordionSidebar">
 
+        
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-          <div class="sidebar-brand-icon rotate-n-15">
-          </div>
-          <div class="sidebar-brand-text mx-3"><img src="img/logo-540x281.jpg" alt="logo" width="110px"></div>
+          <div class="sidebar-brand-text "><img src="img/hybrid-logo-white.png" alt="logo" width="260px"></div>
         </a>
   
         <!-- Divider -->
@@ -163,8 +162,6 @@
             <i class="fa fa-bars"></i>
           </button>
 
-          <!-- Topbar banner -->
-          <div class="sidebar-brand-text mx-3"><img src="img/logo-540x281.jpg" alt="logo" width="110px"></div>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -328,13 +325,33 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
           
-          <h2 class="text-center mb-4 sticky-top">Danh sách form</h2>
+          <div class="head-action row mb-5">
+            <div class="col-2">
+              <h4 class="">Quản lý user</h2>
+            </div>
+           <div class="col-4">
+              <!-- Search user -->
+              <div class="input-group md-form form-sm form-2 pl-0 ">
+                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                      aria-hidden="true"></i></span>
+                </div>
+              </div>
+           </div>
+           <div class="col-6">
+              <!-- add new user button -->
+              <div class="d-flex justify-content-end align-items-center ">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-form">Thêm mới user</button>
+                <!-- Add new user form -->
+
+              </div>
+           </div>
           
-          <!-- add new user button -->
-          <div class="d-flex justify-content-end align-items-center mb-5">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-form">Thêm mới Form</button>
-            <!-- Add new form template-->
-            <div class="modal fade bd-example-modal-lg" id="user-form" tabindex="-1" role="dialog"
+
+          </div>
+          <!-- modal form template -->
+          <div class="modal fade bd-example-modal-lg" id="user-form" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
               <div class="modal-content">
@@ -517,16 +534,6 @@
               </div>
             </div>
             </div>
-
-          </div>
-          <!-- Search Form -->
-          <div class="input-group md-form form-sm form-2 pl-0 mb-5">
-            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-              <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
-                  aria-hidden="true"></i></span>
-            </div>
-          </div>
           <!-- Form list -->
           <table class="table table-hover mb-5 text-center">
             <thead>
